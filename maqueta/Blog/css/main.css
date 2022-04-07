@@ -11,6 +11,7 @@
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    --bg: 35px;
 }
 
 body{
@@ -98,108 +99,60 @@ nav .profile-link a:hover{
     transition: all 0.1s ease 0s;
 }
 
-.blogs-main {
-    display: grid;
-}
-
-.blogs-news-container {
-    background-color: var(--gray);
-    padding: 0px 25px 15px;
-}
-
 .grid-container{
     max-width: 980px;
     margin: 0 auto;
 }
 
-.blogs-main-new {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr;
+.blogpost-img-container {
+    padding: 0 50px 40px;
 }
 
-.blogs-news-img-container {
-    grid-column: 1;
-    justify-items: center;
-    color: var(--primary-letters);
-}
-
-.blogs-news-img-container img {
-    width: 85%;
-}
-
-.blogs-news-info-container {
-    grid-column: 2;
-}
-
-.blogs-news-info-container {
-    margin: 0px 20px 0px;
-}
-
-.blogs-news-info-container h2 {
-    margin: 0;
-}
-
-.blogs-button {
-    border: 1px solid var(--secondary);
-    border-radius: 6px;
-    padding: 5px 10px;
-    font-size: var(--sm);
-}
-
-.blogs-button:hover{
-    background-color: var(--secondary);
-    color: var(--primary-letters);
-    transition: all 0.2s ease-in-out;
-}
-
-.blogs-posts-container {
-    padding: 0 25px 15px;
-}
-
-.blogs-posts-container h3 {
-    border-bottom: 1px solid var(--gray);
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.blogs-posts-container .blogs-posts-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
-}
-
-.blogs-posts-container .post-container {
-    background: var(--gray);
-    display: inline-block;
-    border-radius: 10px;
-    max-width: 200px;
-    max-height: 300px;
-    padding: 15px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in-out;
-}
-
-.blogs-posts-container .post-container h6 {
-    font-size: var(--md);
-    margin: 10px 0px 15px;
-}
-
-.blogs-posts-container .post-container p {
-    font-size: var(--sm);
-    margin-bottom: 10px;
-}
-
-.blogs-posts-container .post-container img {
+.blogpost-img-container img {
     width: 100%;
 }
 
-.blogs-posts-container .post-container:hover{
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+.blogpost-main-container {
+    padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3 {
+    border-bottom: 2px solid var(--gray);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blogpost-main-container article h1 {
+    font-size: var(--bg);
+}
+.blogpost-main-container article p {
+    text-align: justify;
+}
+
+.contact-main-container {
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+.contact-main-container div {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+
+.contact-main-container div a {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 5px;
+}
+
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px;
+}
+.contact-main-container img {
+    width: 100px;
 }
 
 footer {
