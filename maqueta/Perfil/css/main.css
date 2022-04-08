@@ -104,31 +104,56 @@ nav .profile-link a:hover{
     margin: 0 auto;
 }
 
-.blogpost-img-container {
-    padding: 0 50px 40px;
+.profile-main-container {
+    padding: 50px 20px;
+    background-color: var(--gray);
+    margin-bottom: 50px;
 }
 
-.blogpost-img-container img {
-    width: 100%;
+.profile-main-container img {
+    width: 250px;
+    margin-right: 30px;
+    border-radius: 50%;
 }
 
-.blogpost-main-container {
-    padding: 0 50px 40px;
-}
-
-.blogpost-main-container h3 {
-    border-bottom: 2px solid var(--gray);
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.blogpost-main-container article h1 {
-    font-size: var(--bg);
-}
-.blogpost-main-container article p {
+.profile-main-container p {
     text-align: justify;
 }
 
+.profile-container {
+    display: flex;
+}
+
+.profile-main-projects {
+    padding: 0 50px 40px;
+}
+
+.profile-main-projects h3 {
+    text-align: center;
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 35px;
+}
+
+.project-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-main-container .project-container img {
+    width: 100%;
+}
+
+.project-main-container .project-container {
+    padding: 0 10px;
+}
+
+.project-main-container .project-container p {
+    text-align: justify;
+}
+
+
+
+/* Contact section */
 .contact-main-container {
     width: 100%;
     min-height: 250px;
